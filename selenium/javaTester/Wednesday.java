@@ -4,3 +4,5 @@ package javaTester;
 public class Wednesday {
 
 }
+
+// TC01
