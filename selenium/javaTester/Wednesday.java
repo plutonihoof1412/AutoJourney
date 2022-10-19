@@ -4,6 +4,4 @@ package javaTester;
 public class Wednesday {
 
 }
-
-// TC01
-//TC02
+// need Slack integration
