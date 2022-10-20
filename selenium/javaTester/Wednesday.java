@@ -19,3 +19,4 @@ public class Wednesday {
 // Topic 8 - Software Testing
 // Why automation testing? avoid tedious tasks 
 // the more unit tests at the beginning, the better it is 
+// Check if Slack integration is okay
