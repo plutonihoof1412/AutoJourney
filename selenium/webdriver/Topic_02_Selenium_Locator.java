@@ -35,17 +35,24 @@ public class Topic_02_Selenium_Locator {
 		// Giá trị của thuộc tính: Attribute value
 	@Test
 	public void TC_01_ID() {
+		// Thao tac len element thi dau tien phai tim duoc element do: findElement
+		// Find theo id/ class/ name/ css/ xpath
+		// then action len element do: click/ sendKeys/ ...
+		
 		driver.findElement(By.id("FirstName")).sendKeys("Automation");;
 	}
 
 	@Test
 	public void TC_02_Class() {
-		
+		// Mo man hinh search
+		driver.get("https://demo.nopcommerce.com/search");
+		driver.findElement(By.className("search-text")).sendKeys("Macbook");
 	}
 
 	@Test
 	public void TC_03_Name() {
-		
+		// Click vao Advanced Search checkbox
+		driver.findElement(By.name("advs")).click();
 	}
 	@Test
 	public void TC_04_TagName() {
