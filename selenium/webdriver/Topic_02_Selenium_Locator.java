@@ -56,27 +56,43 @@ public class Topic_02_Selenium_Locator {
 	}
 	@Test
 	public void TC_04_TagName() {
-		
+		System.out.println(driver.findElements(By.tagName("input")).size()); 
 	}
 
 	@Test
 	public void TC_05_LinkText() {
-		
+		// Click vao duong link cho Addresses (lay toan bo keyword)
+		driver.findElement(By.linkText("Addresses")).click();
 	}
 	
 	@Test
 	public void TC_06_PartialLinkText() {
-		
+		// Click vao duong link cho ... vendor account (lay mot phan keyword)
+		driver.findElement(By.partialLinkText("vendor account")).click();
 	}
 	
 	@Test
 	public void TC_07_CSS() {
-		
+		// Mở lai trang Register ra
+				driver.get("https://demo.nopcommerce.com/register");
+		// cach 1
+				driver.findElement(By.cssSelector("input#FirstName")).sendKeys("Selenium");
+		// cach 2
+				driver.findElement(By.cssSelector("input[id='LastName']")).sendKeys("Locator");
+				// cach 3
+				driver.findElement(By.cssSelector("input[name='Email']")).sendKeys("automation@gmail.com");
 	}
 	
 	@Test
 	public void TC_08_Xpath() {
-		
+		// Mở lai trang Register ra
+		driver.get("https://demo.nopcommerce.com/register");
+		// cach 1
+		driver.findElement(By.xpath("//input[@id='FirstName']")).sendKeys("Selenium");
+		// cach 2
+		driver.findElement(By.xpath("//input[@id='LastName']")).sendKeys("Locator");
+		// cach 3
+		driver.findElement(By.xpath("//label[text()='Email:']/following-sibling::input")).sendKeys("automation@gmail.com");
 	}
 
 	@AfterClass
