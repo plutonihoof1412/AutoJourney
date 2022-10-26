@@ -29,12 +29,16 @@ public class Topic_03_XPath_Part_1 {
 
 	@Test
 	public void TC_01_() {
-		driver.get("http://live.techpanda.org/index.php/customer/account/login/");
-		// Click vao link My Account o duoi Footer
-		driver.findElement(By.xpath("//div[@class='footer']//a[@title='My Account']")).click();
+//		driver.get("http://live.techpanda.org/index.php/customer/account/login/");
+//		// Click vao link My Account o duoi Footer
+//		driver.findElement(By.xpath("//div[@class='footer']//a[@title='My Account']")).click();
+		driver.get("https://automationfc.github.io/basic-form/");
+		System.out.println("Text cua the H5: " + driver.findElement(By.xpath("//h5[@id='nested']")).getText()); // lay infor cua the con
 		
 	}
-
+	
+	
+	
 	
 
 	@AfterClass
