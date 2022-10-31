@@ -37,6 +37,6 @@ public class Topic_03_Text {
 
 	@AfterClass
 	public void afterClass() {
-		driver.quit();
+		
 	}
 }
